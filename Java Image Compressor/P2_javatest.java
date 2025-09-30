@@ -7,7 +7,6 @@ import javax.imageio.ImageIO;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
 import javax.imageio.stream.ImageOutputStream;
-import javax.management.loading.MLet;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -38,9 +37,8 @@ public class P2_javatest extends JFrame implements ActionListener {// main
     JLabel text6;
 
     P2_javatest() { // fucntion 
-        ImageIcon icon = new ImageIcon("ITE186.png");
-
-        ImageIcon logo = new ImageIcon("ITE186logo.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("/ITE186.png"));
+        ImageIcon logo = new ImageIcon(getClass().getResource("/ITE186logo.png"));
         // This create a screen
         this.setTitle("Image Compressor");
         this.setSize(900, 500);

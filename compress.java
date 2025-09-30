@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
+
 public class compress {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
